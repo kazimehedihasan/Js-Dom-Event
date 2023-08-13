@@ -1,9 +1,9 @@
-
 // option 2 : add onclik function
+// use hobe maje maje
 function makered() {
   document.body.style.backgroundColor = "red";
 }
-
+// option 1: add onclick function on the html element
 
 // option 3
 const makeBlueButton = document.getElementById("make-blue");
@@ -14,7 +14,24 @@ function makeBlue() {
 }
 
 // option  3 another
-const purpleButton = document.getElementById('make-purple');
-purpleButton.onclick = function makepurple(){
-    document.body.style.backgroundColor = 'purple';
+const purpleButton = document.getElementById("make-purple");
+purpleButton.onclick = function makepurple() {
+  document.body.style.backgroundColor = "purple";
+};
+// option : 4
+const pinkButton = document.getElementById("make-pink");
+pinkButton.addEventListener("click", makePink);
+function makePink() {
+  document.body.style.backgroundColor = "pink";
 }
+// option : 4 another
+const makeGreenButton = document.getElementById('make-green');
+makeGreenButton.addEventListener('click', function makeGreen(){
+    document.body.style.backgroundColor = 'green';
+})
+
+
+// 5 final ai ta us hobe
+document.getElementById('make-goldenrod').addEventListener('click', function(){
+  document.body.style.backgroundColor = 'goldenrod';
+})
